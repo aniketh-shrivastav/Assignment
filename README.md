@@ -130,17 +130,3 @@ Import `backend/postman_collection.json` into Postman.
 ## Scalability Note
 
 The project follows a modular architecture (`controllers`, `routes`, `services`, `middleware`, `models`) so new modules can be added without impacting existing logic.
-
-For production scalability:
-
-- Deploy backend replicas behind a load balancer
-- Use Redis for caching hot reads and token blacklisting
-- Add async processing with queues for heavy jobs
-- Move toward microservices if domain complexity grows
-- Add centralized logging/monitoring (ELK, Grafana, or cloud-native tools)
-
-## Optional Improvements
-
-- Rate limiting and refresh token flow
-- Automated tests (unit + integration)
-- CI/CD pipeline for build/test/deploy
