@@ -1,0 +1,170 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  background: linear-gradient(160deg, #e8f2ff 0%, #f8fbff 60%, #e6fffa 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-shell {
+  width: min(980px, 92vw);
+  margin: 2rem auto 3rem;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  color: #4b5563;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.dashboard .topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 0.55rem;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  background: #0369a1;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.7;
+}
+
+.secondary-btn {
+  background: #475569;
+}
+
+.danger-btn {
+  background: #b91c1c;
+}
+
+.message {
+  margin: 0.7rem 0;
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+}
+
+.message.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.message.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.helper-text {
+  color: #4b5563;
+  font-size: 0.92rem;
+}
+
+.field-error {
+  color: #b91c1c;
+  font-size: 0.82rem;
+  margin-top: -0.3rem;
+}
+
+.field-hint {
+  color: #6b7280;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+input.input-error,
+textarea.input-error {
+  border-color: #ef4444;
+  outline-color: #ef4444;
+}
+
+.product-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.product-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+
+.product-item h4,
+.product-item p {
+  margin: 0 0 0.3rem;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 0.55rem;
+}
+
+@media (max-width: 700px) {
+  .dashboard .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
